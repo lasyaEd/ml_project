@@ -8,7 +8,6 @@ from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, Flatten, Dense,
 from tensorflow.keras.models import Model
 import tensorflow as tf
 from yt_dlp import YoutubeDL
-from getpass import GetPassWarning
 import warnings
 
 # Load the environment variables
@@ -18,7 +17,7 @@ token = os.getenv("HUGGING_FACE_HUB_TOKEN")
 login(token=token)
 
 
-warnings.filterwarnings("ignore", category=GetPassWarning)
+warnings.filterwarnings("ignore")
 
 # Function to build the base network for feature extraction
 def build_base_network(input_shape):
