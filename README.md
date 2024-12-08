@@ -14,3 +14,20 @@ At a high level, the notebook performs the following:
 
 
 **Reproduce the results**: The notebook is a self-contained, reproducible workflow. Given the same input data, you can run the notebook to obtain the same model and results. However, you'll need to have the required libraries (pandas, scikit-learn, TensorFlow/Keras, OpenCV, and matplotlib) installed and the CSV data file available. The notebook also assumes a Google Colab environment (indicated by drive.mount usage), but could be adapted to run elsewhere.
+
+### This Python script is a Streamlit application that performs match cutting on YouTube videos. Match cutting is a film editing technique where similar actions or shots are juxtaposed to create a seamless transition or highlight a thematic connection.
+
+At a high level, the application does the following:
+
+**Downloads a pre-trained Siamese network:** It uses the huggingface_hub library to download a pre-trained model (likely for image similarity comparison) from Hugging Face.
+
+**Gets YouTube video frames**: The user provides a YouTube video ID. The app downloads the video, extracts frames at a specified interval, and stores them.
+
+**Allows selection of a reference section**: The user selects a portion (a range of frames) of the video to serve as the reference section for comparison.
+
+**Finds similar sections**: Using the pre-trained Siamese network, the application compares the reference section with other sections of the video to identify sections with visually similar content. The similarity is based on frame-by-frame comparison.
+
+**Displays results**: The application displays the selected reference section and the top similar sections it found, along with their similarity scores. These are shown as short video clips.
+
+In short, you would use this application if you need to automatically find visually similar sections within a YouTube video, potentially for film editing purposes, analysis of visual patterns, or other tasks requiring visual similarity detection. The use of a pre-trained Siamese network allows it to perform this task without needing extensive training data.
+
