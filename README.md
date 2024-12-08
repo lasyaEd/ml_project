@@ -1,4 +1,4 @@
-###This notebook trains and evaluates a Siamese neural network.
+### This notebook trains and evaluates a Siamese neural network.
 
 At a high level, the notebook performs the following:
 
