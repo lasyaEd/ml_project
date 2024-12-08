@@ -87,3 +87,5 @@ This app allows users to detect visually similar sections in YouTube videos.
    ```bash
    git clone https://github.com/lasyaEd/ml_project.git
    cd ml_project
+   pip install -r requirements.txt
+   streamlit run app.py
