@@ -9,10 +9,14 @@ from tensorflow.keras.models import Model
 import tensorflow as tf
 from yt_dlp import YoutubeDL
 
-# Load Hugging Face token
+# Load the environment variables
 load_dotenv()
-token = os.getenv('HUGGING_FACE_HUB_TOKEN')
+# Retrieve the token from the .env file
+token = os.getenv("HUGGING_FACE_HUB_TOKEN")
 login(token=token)
+
+import warnings
+warnings.filterwarnings("ignore", category=GetPassWarning)
 
 # Function to build the base network for feature extraction
 def build_base_network(input_shape):
