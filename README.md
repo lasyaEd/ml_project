@@ -85,5 +85,5 @@ This app allows users to detect visually similar sections in YouTube videos.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-repo/match-cut-detection.git
-   cd match-cut-detection
+   git clone https://github.com/lasyaEd/ml_project.git
+   cd ml_project
