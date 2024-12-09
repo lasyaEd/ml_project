@@ -13,8 +13,7 @@ import warnings
 # Load the environment variables
 load_dotenv()
 # Retrieve the token from the .env file
-#token = os.getenv("HUGGING_FACE_HUB_TOKEN")
-login(token="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")
+login(token=os.getenv("HUGGING_FACE_HUB_TOKEN"))
 
 
 warnings.filterwarnings("ignore")
