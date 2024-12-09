@@ -68,6 +68,7 @@ This app allows users to detect visually similar sections in YouTube videos.
 
 #### ⚙️ **Process**
 - **Pre-trained model**: Downloads a Siamese network for image similarity via `huggingface_hub`.
+-   [Siamese Model we trained and deployed on Huggingface](https://huggingface.co/samanthajmichael/siamese_model.h5)
 - **Frame extraction**: Downloads a YouTube video, extracts frames, and stores them.
 - **Reference selection**: Allows users to select a range of frames as the reference section.
 - **Find similar sections**: Identifies sections with high similarity to the reference using the pre-trained model.
